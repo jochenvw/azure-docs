@@ -557,7 +557,7 @@ public static class EnvironmentVariablesExample
     public static string GetEnvironmentVariable(string name)
     {
         return name + ": " +
-            System.Environment.GetEnvironmentVariable(name, EnvironmentVariableTarget.Process);
+            System.Environment.GetEnvironmentVariable(name, System.EnvironmentVariableTarget.Process);
     }
 }
 ```
